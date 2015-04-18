@@ -51,6 +51,5 @@ int main() {
 		pf("%lld. %lld\n", T++, dp());
 		sf("%lld", &n);
 	}
-	
 	return 0;
 }
