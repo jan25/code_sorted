@@ -20,11 +20,11 @@ ll n;
 ll move[4][2] = {{1, -1}, {0, 1}, {1, 1}, {1, 0}};
 
 ll dp() {
-	DP[n][0] = cost[n][0]+cost[n][1];
+	DP[n][0] = cost[n][0] + cost[n][1];
 	DP[n][1] = cost[n][1];
 	DP[n][2] = inf;
 	ll r, c, ans;
-	for (int i = n-1; i >= 1; --i) {
+	for (int i = n - 1; i >= 1; --i) {
 		for (int j = 2; j >= 0; --j) {
 			ans = inf;
 			for (int k = 0; k < 4; ++k) {
