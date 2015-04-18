@@ -2,7 +2,8 @@
 **  Author: Abhilash
 **  Date:   28.04.2015
 */
-
+// using K M P algorithm
+//
 #include <bits/stdc++.h>
 #define s1(n)						scanf("%d", &n)
 #define s2(n, m)					scanf("%d%d", &n, &m)
