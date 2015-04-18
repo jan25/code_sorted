@@ -5,12 +5,10 @@
 // using K M P algorithm
 //
 #include <bits/stdc++.h>
-#define s1(n)						scanf("%d", &n)
-#define s2(n, m)					scanf("%d%d", &n, &m)
 #define gc getchar_unlocked
 #define pc putchar_unlocked
-#define isc(c) ((c >= 'a' && c <= 'z')||(c >= 'A'&&c <= 'Z'))
-#define N 100010
+#define isc(c) ( (c >= 'a' && c <= 'z') || (c >= 'A'&&c <= 'Z') )
+#define N 1e5+2
 #define sf scanf
 
 char s[2*N];
