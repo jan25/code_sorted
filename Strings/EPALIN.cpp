@@ -7,7 +7,7 @@
 #include <bits/stdc++.h>
 #define gc getchar_unlocked
 #define pc putchar_unlocked
-#define isc(c) ( (c >= 'a' && c <= 'z') || (c >= 'A'&&c <= 'Z') )
+#define isc(c) ( (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') )
 #define N 1e5+2
 #define sf scanf
 
