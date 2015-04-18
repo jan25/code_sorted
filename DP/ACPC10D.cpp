@@ -2,10 +2,11 @@
 **	Author: Abhilash
 **	Date:	28.04.2015
 */
+// Bottom up computation
+//
 #include <bits/stdc++.h>
 #define sf							scanf
 #define pf 							printf
-#define ms0(X) 						memset((X), 0, sizeof((X)))
 typedef long long ll;
 using namespace std;
 const ll N = 1e6+3;
@@ -47,7 +48,6 @@ int main() {
 			sf("%lld %lld %lld", &cost[i+1][0],
 						&cost[i+1][1],
 						&cost[i+1][2]);
-		ms0(DP);
 		pf("%lld. %lld\n", T++, dp());
 		sf("%lld", &n);
 	}
