@@ -45,8 +45,8 @@ int main() {
 	while (n) {
 		for (int i = 0; i < n; ++i) 
 			sf("%lld %lld %lld", &cost[i+1][0],
-								&cost[i+1][1],
-								&cost[i+1][2]);
+						&cost[i+1][1],
+						&cost[i+1][2]);
 		ms0(DP);
 		pf("%lld. %lld\n", T++, dp());
 		sf("%lld", &n);
