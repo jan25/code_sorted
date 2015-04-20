@@ -1,5 +1,5 @@
 /*
-**	Author: Abhilash
+**
 **	Date:	18.04.2015
 */
 // Bottom up computation
