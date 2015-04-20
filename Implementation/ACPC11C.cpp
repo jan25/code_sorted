@@ -9,10 +9,10 @@ int pre[N+1];
 
 int main() {
 	ios::sync_with_stdio(0);
+	pre[0] = 0;
 	int t, a; cin >> t;
 	while (t--) {
 		cin >> a;
-		pre[0] = 0;
 		for (int i = 1; i <= a; ++i) {
 			cin >> pre[i];
 			pre[i] += pre[i-1];
