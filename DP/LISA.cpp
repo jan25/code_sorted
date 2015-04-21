@@ -12,24 +12,24 @@ using namespace std;
 typedef long long ll;
 
 const ll inf = LONG_MAX;
-const ll N = 100;
+const int N = 100;
 
-ll num[N];
+int num[N];
 char op[N];
-ll L;
+int L;
 
 ll DP[N][N][2]; // 0 min 1 max
 
-void dp(ll i, ll j) {
+void dp(int i, int j) {
 	if (i < 0 || j > L) return;
+	if (DP[i][j][0] != -1 && DP[i][j][1] != -1) return;
 	if (i == j) {
 		DP[i][i][1] = DP[i][i][0] = num[i];
 		return;
 	}
-	if (DP[i][j][0] != -1 && DP[i][j][1] != -1) return;
 	ll mina = inf, maxa = -1;
 	char o;
-	for (ll k = i+1; k <= j; ++k) {
+	for (int k = i+1; k <= j; ++k) {
 		dp(i, k-1);
 		dp(k, j);
 		o = op[k];
@@ -47,8 +47,8 @@ void dp(ll i, ll j) {
 }
 
 int main() {
-	ll t; cin >> t;
-	ll a, b;
+	int t; cin >> t;
+	int a, b;
 	while (t--) {
 		char c = gc();
 		while (!isc(c)) c = gc();
@@ -60,8 +60,8 @@ int main() {
 			c = gc();
 		}
 		L = a-1;
-		memset(DP, -1, sizeof(DP));
 		
+		memset(DP, -1, sizeof(DP));
 		dp(0, L);		
 		
 		cout << DP[0][L][1] << ' ' << DP[0][L][0] << "\n";
