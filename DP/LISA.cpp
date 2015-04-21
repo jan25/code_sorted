@@ -2,7 +2,7 @@
  *    Date: 21.04.2015 
  * 
  */
-// top down. memoized.
+// top down computation. memoized.
 //
 #include <bits/stdc++.h>
 using namespace std;
