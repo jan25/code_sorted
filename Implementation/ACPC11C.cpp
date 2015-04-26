@@ -1,3 +1,8 @@
+/*
+**	Date: 26.04.2015
+**
+*/
+//brute force. using cumulative sums.
 
 #include <bits/stdc++.h>
 using namespace std;
