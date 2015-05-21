@@ -1,6 +1,6 @@
 /*
 	date: 21 05 2015
-	stat NA
+	
 */
 	// two dfs traversals for finding SCC
 
