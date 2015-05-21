@@ -1,3 +1,8 @@
+/*
+	date: 22 05 2015
+*/
+	// 2 dfs for finding SCC sinks
+	
 #include <bits/stdc++.h>
 using namespace std;
 #define pb push_back
