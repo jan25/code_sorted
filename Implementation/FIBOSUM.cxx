@@ -1,6 +1,7 @@
 /*
 **	date: 20 05 2015
 */
+// 2 x 2 matrix exponentitation
 
 #include <bits/stdc++.h>
 using namespace std;
