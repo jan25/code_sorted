@@ -2,7 +2,7 @@
 	date: 20 05 2015
 */
 
-//4 x 4 matrix exp 
+//4 x 4 matrix exponentitation 
 
 #include <bits/stdc++.h>
 using namespace std;
