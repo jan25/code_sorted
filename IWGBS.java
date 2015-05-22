@@ -19,7 +19,6 @@ class UsingBigInt {
 		for (int i = 2; i < N; ++i) {
 			one[i] = one[i-1].add(zero[i-1]);
 			zero[i] = one[i-1].add(new BigInteger("0"));
-			
 		}
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
