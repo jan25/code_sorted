@@ -53,8 +53,8 @@ void solve(int n) {
 		vector<int> v;
 		while (sameCount--) {
 			timeOfFinish[it->second] = prevSpent + 
-										((n) * (minTime - lastMin - 1)) + 
-												it->second - getBelow(it->second);
+						    ((n) * (minTime - lastMin - 1)) + 
+							it->second - getBelow(it->second);
 									
 			v.push_back(it->second);
 			++it;	
