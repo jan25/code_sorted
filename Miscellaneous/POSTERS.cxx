@@ -1,3 +1,8 @@
+/*
+	segment tree. lazy idea
+	co-ordinates compressed
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define mid (l + r)/2
