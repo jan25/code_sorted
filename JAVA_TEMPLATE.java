@@ -27,7 +27,7 @@ public class Code1 {
 
     	public void solve() {
 
-      }
+	}
         
     }
 
