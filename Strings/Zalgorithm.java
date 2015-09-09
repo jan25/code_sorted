@@ -1,8 +1,6 @@
 /* Z algorithm */
-/* longest common prefix for S ans suffix(S) */
+/* longest common prefix for S and suffix(S) */
 /* O(len(s)) */
-
-//package codeforces;
 
 
 import java.io.*;
