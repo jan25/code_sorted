@@ -1,3 +1,8 @@
+// http://www.spoj.com/problems/MUTDNA/
+/*
+	DP O(N) solution
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
