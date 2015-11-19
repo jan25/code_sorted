@@ -46,6 +46,5 @@ int main() {
 		ans |= b;
 		cout << ans << endl;
 	}
-
 	return 0;
 }
