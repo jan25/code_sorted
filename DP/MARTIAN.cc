@@ -1,6 +1,6 @@
 // http://www.spoj.com/problems/MARTIAN/
 /*
-  DP O(n^2)
+  DP O(n * m)
   using prefix sum
 */
 
