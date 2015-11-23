@@ -22,14 +22,13 @@ void input(int a[][maxn]) {
 int DP[maxn][maxn][2];
 int vis[maxn][maxn][2];
 
-int tc;
+int tc = 1;
 
 int dp(int r, int c, int dir) {
 	if (r == -1 || c == -1) return 0;
 	if (vis[r][c][dir] == tc) return DP[r][c][dir];
 	vis[r][c][dir] = tc;
-	if (dir) return DP[r][c][dir] = max(dp(r, c - 1, 0), dp(r, c - 1, 1)) +
-										b[r][c];
+	if (dir) return DP[r][c][dir] = max(dp(r, c - 1, 0), dp(r, c - 1, 1)) + b[r][c];
 	return DP[r][c][dir] = max(dp(r - 1, c, 0), dp(r - 1, c, 1)) + y[r][c];
 }
 
@@ -45,14 +44,12 @@ void solve() {
 		}
 	}
 
-	cout << max(dp(n - 1, m - 1, 0), // do left
-				dp(n - 1, m - 1, 1)) << "\n";
+	cout << max(dp(n - 1, m - 1, 0), dp(n - 1, m - 1, 1)) << "\n";
 }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	tc = 1;
 	while (1) {
 		cin >> n >> m;
 		if (!n) break;
