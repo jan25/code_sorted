@@ -20,14 +20,11 @@ int vis[maxn];
 
 void dfs(int v = s) {
 	vis[v] = -1;
-	for (int i = 0; i < g[v].size(); ++i)
-		if (!vis[g[v][i]]) {
-			dfs(g[v][i]);
+	for (int i = 0; i < g[v].size(); ++i) {
+		if (!vis[g[v][i]]) dfs(g[v][i]);
+		if (!vis[g[v][i]] || vis[g[v][i]] + 1) 
 			dag[g[v][i]].pb(v);
-		}
-		else if (vis[g[v][i]] + 1) {
-			dag[g[v][i]].pb(v);
-		}
+	}
 	vis[v] = 1;
 }
 
