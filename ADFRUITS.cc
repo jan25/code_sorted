@@ -23,6 +23,7 @@ int lcs(int i = a.length() - 1, int j = b.length() - 1) {
 void solve() {
 	stack<ii > st;
 	int i = a.length() - 1, j = b.length() - 1;
+	st.push(ii(a.length(), b.length());
 	while (i + 1 && j + 1) {
 		if (a[i] == b[j]) {
 			st.push(ii(i, j));
@@ -38,11 +39,9 @@ void solve() {
 		while (i < st.top().first) cout << a[i++];
 		while (j < st.top().second) cout << b[j++];
 		st.pop();
-		cout << a[i];
+		if (a.length() - i) cout << a[i];
 		++i; ++j;
 	}
-	while (i < a.length()) cout << a[i++];
-	while (j < b.length()) cout << b[j++];
 	cout << endl;
 }
 
