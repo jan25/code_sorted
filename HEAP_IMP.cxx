@@ -81,9 +81,9 @@ int main() {
 		
 	heap h;
 	for (int i = 0; i < n; ++i) {
-		int x = rand();
-		h.push(x % n);
-		cout << x % n << " ";
+		int x = rand() % n;
+		h.push(x);
+		cout << x << " ";
 	}	
 	cout << "\n";
 
