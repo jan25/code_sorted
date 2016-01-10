@@ -1,7 +1,7 @@
 // http://www.spoj.com/problems/AGGRCOW/
 /*
 	binary search [over possible answer space]
-	O(n * max(xi))
+	O(n * log(max(xi)))
 */
 
 #include <bits/stdc++.h>
