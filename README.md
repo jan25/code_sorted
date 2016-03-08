@@ -1,3 +1,2 @@
 # code_solved
-This repository includes code.
-This is all about this repository :)
+This rep contains code for problems from online judges
