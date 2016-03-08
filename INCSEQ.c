@@ -34,7 +34,6 @@ void add(int n, int k, int val) {
 
 int main() {
   scanf("%d %d", &n, &k);
-  int ans = 0;
   while (n--) {
     int x;
     scanf("%d", &x);
