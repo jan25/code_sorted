@@ -64,7 +64,7 @@ void solve() {
 	for (ll i = 0; i < 10; ++i) {
 		for (ll j = 0; j < 10; ++j) {
 			pans += ans[i][j];
-			if (pans >= mod)pans %= mod;
+			if (pans >= mod) pans %= mod;
 		}
 	}
 	printf("%lld\n", pans);
