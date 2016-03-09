@@ -25,8 +25,7 @@ int V[N][N];
 int hash() {
 	int h = 0;
 	for (int i = 0; i < 11; ++i) {
-		if (v[i]) 
-			h |= (1 << (i - 1));
+		if (v[i]) h |= (1 << (i - 1));
 	}
 	return h;
 }
@@ -132,7 +131,7 @@ int main() {
 		memset(spl, -1, sizeof(spl));
 		int a, b; int dist = 0;
 		for (int i = 0; i < D.size(); ++i) {
-				x = D[i].first; y = D[i].second;
+			x = D[i].first; y = D[i].second;
 			for (int j = 0; j < D.size(); ++j) {
 				a = D[j].first; b = D[j].second;
 				memset(V, 0, sizeof(V));
