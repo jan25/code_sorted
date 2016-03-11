@@ -8,7 +8,7 @@ vector<int> g[maxn];
 
 bool dfs(int v, int s, int m, int p = -1) {
   if (vis[v] > 0 && vis[v] != m) return false;
-  else vis[v] = m;
+  vis[v] = m;
   if (s == 0) return true;
   bool res = true;
   for (int i = 0; i < g[v].size(); ++i)
