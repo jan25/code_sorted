@@ -1,2 +1,4 @@
 # code_solved
-This rep contains code for problems from online judges
+
+Spoj profile @ http://www.spoj.com/users/jan25/
+Codeforces profile @ http://codeforces.com/profile/jan25
