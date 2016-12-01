@@ -1,0 +1,67 @@
+<!doctype html>
+<html> 
+<head>
+</head>
+<body>
+<script>
+/*
+* run function with and without sorted array
+* strangly- run(sorted array) is faster than run(un-sorted)
+* 
+* *found here*- http://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array
+*
+* Use browser console to see the results
+*/
+
+var ar = [];
+
+function isSorted(i) {
+	if (!i) i = 0;
+	if (i == ar.length - 1 || ar.length == 0) return true;
+	return ar[i] <= ar[i + 1] && isSorted(i + 1);
+}
+
+function run(L, sort, n, times) {
+	if (!n) n = 12345;
+
+	if (!L.length) {
+		for (var i = 0; i < n; ++i) {
+			L[i] = Math.floor(Math.random() * 400);
+		}
+	}
+
+	var st = Date.now();
+
+	if (sort) L.sort((a, b) => a - b);
+
+	if (!times) times = 10000;
+	var sum = 0;
+	for (var i = 0; i < times; ++i) {
+		for (var j = 0; j < n; ++j) {
+			if (L[j] < 200) sum += L[j];
+		}
+	}
+
+	var en = Date.now();
+
+	return en - st - sub;
+}
+
+function test(n) {
+	for (var t = 0; t < n; ++t) {
+		console.log('-------test ' + t + '---------');
+		ar = [];
+		var without = run(ar) / 1000 + 'ms';
+		console.log('array sorted? ' + isSorted());
+		console.log('without sort = ' + without);
+		var withs = run(ar, true) / 1000 + 'ms';
+		console.log(' array sorted? ' + isSorted());
+		console.log(' with sort = ' + withs);
+	}
+}
+
+test(5); // run 5 tests
+
+</script>
+</body>
+</html>
