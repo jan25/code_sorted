@@ -51,10 +51,10 @@ function test(n) {
 	for (var t = 0; t < n; ++t) {
 		console.log('-------test ' + t + '---------');
 		ar = [];
-		var without = run(ar) / 1000 + 'ms';
+		var without = run(ar) / 1000 + 'sec';
 		console.log('array sorted? ' + isSorted());
 		console.log('without sort = ' + without);
-		var withs = run(ar, true) / 1000 + 'ms';
+		var withs = run(ar, true) / 1000 + 'sec';
 		console.log(' array sorted? ' + isSorted());
 		console.log(' with sort = ' + withs);
 	}
