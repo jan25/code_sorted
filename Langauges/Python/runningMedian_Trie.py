@@ -58,9 +58,7 @@ class MinHeap:
 		self.heap[a], self.heap[b] = \
 		self.heap[b], self.heap[a]
 
-
-''' Solve problem 
-https://www.hackerrank.com/challenges/ctci-find-the-running-median '''
+''' running median solution '''
 leftHalf = MinHeap() # neg vals
 rightHalf = MinHeap() # pos vals
 def balance():
