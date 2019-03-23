@@ -3,6 +3,11 @@
   Expected logN for insert, delete and search
   Treap == BST + heap property
   *Not generic. keys can be int only
+  Idea: We use randomised priority value at each node in the tree
+  We heapify based on the node priorities after BST insert
+  The randomisation gives higher probability that tree if flat [height ~ log(N)]
+  ==> So, the insert, delete and search are logN average(much better probable than plain BST)
+  *Note: Worst case is still O(N) for each insert, delete and search (theoretically speaking)
 */
 
 struct treap {
