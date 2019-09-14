@@ -1,6 +1,9 @@
 '''
 https://leetcode.com/contest/weekly-contest-153/problems/make-array-strictly-increasing/
 Seems like LC Python3 environment is broken, I see expected output consitently with my output for this. But i get WA on Submit for same test case.
+Edit:
+Fixed py3 issue
+See https://leetcode.com/discuss/general-discussion/381888/issues-with-python3-environment/343057 and https://docs.python-guide.org/writing/gotchas/
 '''
 import bisect
 
@@ -35,7 +38,7 @@ class Solution:
         if li == len(l) or l[li] > e - 1: li -= 1
         return l[li]
 
-    def dp(self, ai, last, a, b, memo={}):
+    def dp(self, ai, last, a, b, memo):
         if ai < 0: return 0
         if (ai, last) in memo:
             return memo[(ai, last)]
@@ -58,6 +61,6 @@ class Solution:
         c.transform(arr1); c.transform(arr2)
         c.reset()
         arr2.sort()
-        sol = self.dp(len(arr1) - 1, self.inf, arr1, arr2)
+        sol = self.dp(len(arr1) - 1, self.inf, arr1, arr2, {})
         if sol >= self.inf: sol = -1
         return sol
