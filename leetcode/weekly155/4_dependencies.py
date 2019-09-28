@@ -43,6 +43,7 @@ class Solution:
         # Topo sort groups if possible
         self.order = []
         self.vis = [0] * next_m # 0 !seen, 1 WIP, 2 Done
+        for g in self.gg:
             if not self.dfs(g):
                 return []
         
