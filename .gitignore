@@ -1,5 +1,6 @@
 
 .vscode/
+**/__pycache__
 
 # c++ compiled file
 **/a.out
@@ -8,6 +9,7 @@
 **/input.txt
 **/output
 **/output.txt
+**/out
 
 **/in
 **/testing_tool.py
